@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>mediator</OriginalElement>
+  <nodes>
+    <node x="-161.0" y="273.0">mediator.GameSpace</node>
+    <node x="337.5" y="273.0">mediator.Cell</node>
+    <node x="-161.0" y="9.5">mediator.GameSpaceInterface</node>
+    <node x="352.5" y="9.5">mediator.CellInterface</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="mediator.Cell" target="mediator.CellInterface" relationship="REALIZATION">
+      <point x="58.75" y="-80.0" />
+      <point x="513.75" y="182.0" />
+      <point x="513.0" y="182.0" />
+      <point x="58.0" y="54.5" />
+    </edge>
+    <edge source="mediator.GameSpace" target="mediator.GameSpaceInterface" relationship="REALIZATION">
+      <point x="-38.0" y="-63.5" />
+      <point x="-29.0" y="182.0" />
+      <point x="94.0" y="182.0" />
+      <point x="85.0" y="55.5" />
+    </edge>
+    <edge source="mediator.GameSpace" target="mediator.CellInterface" relationship="TO_MANY">
+      <point x="85.0" y="-68.0" />
+      <point x="94.0" y="201.25" />
+      <point x="421.0" y="201.25" />
+      <point x="-34.0" y="45.5" />
+    </edge>
+    <edge source="mediator.Cell" target="mediator.GameSpaceInterface" relationship="TO_ONE">
+      <point x="-58.75" y="-80.0" />
+      <point x="396.25" y="464.0" />
+      <point x="-196.0" y="464.0" />
+      <point x="-196.0" y="182.0" />
+      <point x="-76.0" y="182.0" />
+      <point x="-85.0" y="55.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="1.0" showDependencies="true" x="190.5" y="254.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
